@@ -1,0 +1,39 @@
+# --- Web framework ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+pydantic-settings>=2.4.0
+email-validator>=2.1.1     # required for pydantic EmailStr (used in auth schemas)
+
+# --- Database (PostgreSQL, async) ---
+sqlalchemy[asyncio]>=2.0.30
+asyncpg>=0.29.0
+alembic>=1.13.0
+
+# --- Auth (JWT) ---
+passlib[bcrypt]>=1.7.4
+python-jose[cryptography]>=3.3.0
+
+# --- CDN storage ---
+imagekitio>=3.2.0
+httpx>=0.27.0               # used for the /jobs/{id}/download streaming proxy
+
+# --- Object detection ---
+ultralytics>=8.2.0            # provides YOLO-World (YOLOWorld class)
+opencv-python-headless>=4.9.0   # video frame reading/writing
+numpy>=1.26.0
+
+# --- CLIP ---
+git+https://github.com/openai/CLIP.git
+ftfy>=6.2.0
+regex>=2024.5.15
+
+# --- ML runtime ---
+torch>=2.2.0
+torchvision>=0.17.0
+
+# --- Imaging ---
+Pillow>=10.3.0
+
+# --- Env loading ---
+python-dotenv>=1.0.1

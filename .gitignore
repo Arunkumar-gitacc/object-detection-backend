@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables (never commit real secrets)
+.env
+
+# Local scratch space for uploads
+tmp_uploads/
+
+# ML model weights (downloaded automatically on first run)
+*.pt
+*.pth
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Alembic (if you add migrations later, keep versions/ but ignore local db files)
+*.sqlite3
